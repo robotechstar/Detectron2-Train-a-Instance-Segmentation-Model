@@ -5,7 +5,11 @@
 ## 1. Installation
 
 See the official [installation guide](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
-
+```
+# Install detectron inside conda
+conda install pytorch torchvision cudatoolkit=11.0 -c pytorch
+python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu110/torch1.7/index.html
+```
 ## 2. Gathering data
 
 Gathering image data is simple. You can either take pictures yourself using some kind of camera, or you can download images from the internet.
