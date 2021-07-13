@@ -1,7 +1,16 @@
 # Detectron2 Train a custom Instance Segmentation Model
 
 ![](doc/detectron_visualize_segmentations.png)
+**Note**: Have problem with torch 1.8. Only torch 1.7 worked so far.
+'1.7.1+cu110'
+https://github.com/facebookresearch/detectron2/issues/2743
+https://detectron2.readthedocs.io/en/latest/tutorials/install.html
+```
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:142: operator(): block: [0,0,0], thread: [127,0,0] Assertion `index >= -sizes[i] && index < sizes[i] && "index out of bounds"` failed.
 
+RuntimeError: CUDA error: device-side assert triggered
+
+```
 ## 1. Installation
 
 See the official [installation guide](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
